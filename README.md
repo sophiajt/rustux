@@ -71,26 +71,13 @@ let-env PATH = [
 ]
 ```
 
-## Install an IDE
-
-If you're a developer, [lapce](https://lapce.dev/) is cool. 
-
-## 
-
 ## Areas that need some love
+
+Graphical apps in general. There are [some](https://github.com/rust-unofficial/awesome-rust) but it's still really early days for Rust and graphical apps.
 
 We don't have a browser. If you're brave, you can try using [servo](https://github.com/servo/servo).
 
-Things I'd like to try;
+## Going further
 
-* replace fd for find
-* replace ripgrep for grep
-* add in a Rust-based window manager (leftwm)
-* nushell as shell
-* bat for cat
-* lapce for graphical editor
-* helix for terminal editor
-* alacritty as the terminal
-* exa for ls
-* starship for a prompt
-* 
+You can go deeper by installing the [rewrite of coreutils to Rust](https://github.com/uutils/coreutils)
+
