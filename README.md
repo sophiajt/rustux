@@ -21,6 +21,8 @@ Finish the install and reboot and we're in. Now to start installing our Rust too
 Install Rust via [rustup](https://rustup.rs/)
 If you chose Arch, you can also install [paru](https://github.com/Morganamilo/paru) (a Rust-based AUR tool). It will also install Rust for you.
 
+You may want to install [rust-analyzer](https://github.com/rust-lang/rust-analyzer) to go with helix (below).
+
 ## Install our first tools
 
 Once Rust is installed, it's time to add some good commandline tools to help us do the rest of the setup. Arch doesn't come with vim by default. That's okay, we have [helix](https://github.com/helix-editor/helix).
@@ -61,13 +63,19 @@ You may want to install some nerd fonts to get the most out of these.
 
 `let-env EDITOR = "helix"` will let you set a default editor.
 
-If you want to make `nu` your defualt shell, you may want to run `config env` and set up the PATH to be what you want. You can put something like this at the bottom.
+If you want to make `nu` your default shell, you may want to run `config env` and set up the PATH to be what you want. You can put something like this at the bottom.
 
 ```nushell
 let-env PATH = [
   # all your paths
 ]
 ```
+
+## Install an IDE
+
+If you're a developer, [lapce](https://lapce.dev/) is cool. 
+
+## 
 
 ## Areas that need some love
 
