@@ -53,8 +53,25 @@ exec dbus-launch leftwm
 
 Then `startx` and we're in.
 
-## 
+## Shell
 
+Let's give ourselves a shell. [nushell](https://github.com/nushell/nushell) is great. You can install [starship](https://github.com/starship/starship) to go with it.
+
+You may want to install some nerd fonts to get the most out of these.
+
+`let-env EDITOR = "helix"` will let you set a default editor.
+
+If you want to make `nu` your defualt shell, you may want to run `config env` and set up the PATH to be what you want. You can put something like this at the bottom.
+
+```nushell
+let-env PATH = [
+  # all your paths
+]
+```
+
+## Areas that need some love
+
+We don't have a browser. If you're brave, you can try using [servo](https://github.com/servo/servo).
 
 Things I'd like to try;
 
@@ -66,4 +83,6 @@ Things I'd like to try;
 * lapce for graphical editor
 * helix for terminal editor
 * alacritty as the terminal
+* exa for ls
+* starship for a prompt
 * 
