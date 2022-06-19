@@ -2,9 +2,11 @@
 
 A thought experiment in creating a Rust-based Linux distro.
 
+Note: this is UNSUPPORTED. It's just for fun :D
+
 ## Picking the distro
 
-For this experiment, I picked arch linux as it felt like the easiest way to start with a known, well-supported base. You could also use some of the Linux-from-scratch style distros.
+For this experiment, I picked [Arch linux](https://archlinux.org/) as it felt like the easiest way to start with a known, well-supported base. You could also use some of the Linux-from-scratch style distros.
 
 For the installation of Arch, I chose to only install the basic graphical system without installing any desktops. We'll pick our window manager later.
 
@@ -14,7 +16,27 @@ Then `archinstall` on boot.
 Then, I set the profile to the `xorg` profile. Made a user. Set up NetworkManager.
 Finish the install and reboot and we're in. Now to start installing our Rust tools.
 
-##
+## Installing Rust
+
+Install Rust via [rustup](https://rustup.rs/)
+If you chose Arch, install [paru](https://github.com/Morganamilo/paru) (a Rust-based AUR tool, it will also install Rust for you)
+
+## Install our first tools
+
+Once Rust is installed, it's time to add some good commandline tools to help us do the rest of the setup. Arch doesn't come with vim by default. That's okay, we have [helix](https://github.com/helix-editor/helix). You can use `paru` to install this.
+
+You can also install `ripgrep` and `fd-find` from cargo here.
+
+## Install leftwm
+
+Install [leftwm](https://github.com/leftwm/leftwm), a Rust-based window manager
+Install [leftwm-theme](https://github.com/leftwm/leftwm-theme), so we can easily pick a theme
+
+## Startup X
+
+Let's configure leftwm and get into a graphical environment.
+
+
 
 Things I'd like to try;
 
@@ -23,4 +45,6 @@ Things I'd like to try;
 * add in a Rust-based window manager (leftwm)
 * nushell as shell
 * bat for cat
+* lapce for graphical editor
+* helix for terminal editor
 * 
