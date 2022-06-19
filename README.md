@@ -19,11 +19,11 @@ Finish the install and reboot and we're in. Now to start installing our Rust too
 ## Installing Rust
 
 Install Rust via [rustup](https://rustup.rs/)
-If you chose Arch, install [paru](https://github.com/Morganamilo/paru) (a Rust-based AUR tool, it will also install Rust for you)
+If you chose Arch, you can also install [paru](https://github.com/Morganamilo/paru) (a Rust-based AUR tool). It will also install Rust for you.
 
 ## Install our first tools
 
-Once Rust is installed, it's time to add some good commandline tools to help us do the rest of the setup. Arch doesn't come with vim by default. That's okay, we have [helix](https://github.com/helix-editor/helix). You can use `paru` to install this.
+Once Rust is installed, it's time to add some good commandline tools to help us do the rest of the setup. Arch doesn't come with vim by default. That's okay, we have [helix](https://github.com/helix-editor/helix).
 
 You can also install `ripgrep` and `fd-find` from cargo here.
 
@@ -32,10 +32,28 @@ You can also install `ripgrep` and `fd-find` from cargo here.
 Install [leftwm](https://github.com/leftwm/leftwm), a Rust-based window manager
 Install [leftwm-theme](https://github.com/leftwm/leftwm-theme), so we can easily pick a theme
 
+You may also want to install `elogind` if you have any issues getting leftwm to work. 
+
+## Install alacritty
+
+We need a terminal, and [alacritty](https://github.com/alacritty/alacritty) fits the bill.
+
+You may also want to configure `leftwm` to run alacritty as your default terminal.
+
 ## Startup X
 
 Let's configure leftwm and get into a graphical environment.
 
+With `elogind`, we can make our .xinitrc:
+
+```shell
+# .xinitrc
+exec dbus-launch leftwm
+```
+
+Then `startx` and we're in.
+
+## 
 
 
 Things I'd like to try;
@@ -47,4 +65,5 @@ Things I'd like to try;
 * bat for cat
 * lapce for graphical editor
 * helix for terminal editor
+* alacritty as the terminal
 * 
